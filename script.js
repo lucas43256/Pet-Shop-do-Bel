@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(`Olá ${name}! Recebemos sua solicitação para o(a) ${petName} no dia ${date} com o serviço ${service}.\n\nPara confirmar o horário agora mesmo, você será redirecionado para o nosso WhatsApp.`);
 
             // Redirect to WhatsApp with a pre-filled message
-            const message = `Olá! Meu nome é ${name} e gostaria de agendar um serviço para o meu pet ${petName} no dia ${date} com o serviço ${service}.`;
+            const message = `Olá! Meu nome é ${name} e gostaria de agendar o serviço ${service} para o meu pet ${petName} no dia ${date}.`;
             window.open(`https://wa.me/5531984631795?text=${encodeURIComponent(message)}`, '_blank');
 
             appointmentForm.reset();
