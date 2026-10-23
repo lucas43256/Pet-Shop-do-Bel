@@ -634,6 +634,12 @@ footer {
     }
 }
 
+.info-content p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -668,5 +674,15 @@ footer {
 
     .form-wrapper {
         padding: 20px;
+    }
+
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-icon-modern {
+        margin: 0 auto;
     }
 }
